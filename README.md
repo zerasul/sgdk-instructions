@@ -112,7 +112,7 @@ En esta sección, podremos ver como descargar y compilar los ejemplos:
   
   Para este taller, recomendamos el emulador _Blastem_; puede descargarse de la siguiente dirección:
   
-  [https://www.retrodev.com/blastem/(https://www.retrodev.com/blastem/)
+  [https://www.retrodev.com/blastem/](https://www.retrodev.com/blastem/)
 
   Si utiliza _Genesis Code_, puede configurar donde se encuentra el emulador en la configuración de la extensión.
   
