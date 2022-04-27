@@ -80,7 +80,7 @@ En primer lugar, para seguir el taller, necesitarás instalar y configurar el ki
     
  [https://github.com/Stephane-D/SGDK/releases/tag/v1.70](https://github.com/Stephane-D/SGDK/releases/tag/v1.70)
 
- Una vez descomprimido, abriremos una consola en la carpeta donde se encuentra SGDK, y ejecutaremos el siguiente comando:
+ Si queremos generar la imagen, puede usarse el siguiente comando; este paso es opcional:
     
   ```bash
   docker build -t sgdk .
@@ -88,6 +88,9 @@ En primer lugar, para seguir el taller, necesitarás instalar y configurar el ki
     
   Esto tardara un rato; ya que tendrá que instalar y configurar todas las dependencias. Una vez hecho esto, ya podemos utilizar SGDK a través de Docker.
     
+  Se ha generado una imagen sgdk y se ha subido a Docker Hub:
+  
+  [https://hub.docker.com/r/zerasul/sgdk](https://hub.docker.com/r/zerasul/sgdk)
   </details>
   
 ## Ejemplos
@@ -164,6 +167,12 @@ En esta sección, podremos ver como descargar y compilar los ejemplos:
   ```bash
   docker run --rm -v $PWD:/src sgdk # En Windows, usar %CD% en vez de $PWD.
   ```
+ 
+ **NOTA**: En caso de usar la imagen docker que hemos dejado en Docker hub usar el siguiente comando:
+ 
+ ```bash
+ docker run --rm -v $PWD:/src zerasul/sgdk
+ ```
   
   <details><summary>Genesis Code </summary>
   Puede usar el comando _Genesis Code: Compile & Run_ (Para abrir la consola de comandos usad la combinación <kbd>ctrl</kbd>+<kbd>Mayus</kbd>+<kbd>P</kbd>.
